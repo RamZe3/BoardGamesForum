@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.PL.ConsolePL.csproj": {}
+  },
+  "projects": {
+    "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.PL.ConsolePL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.PL.ConsolePL.csproj",
+        "projectName": "Epam.BoardGamesForum.PL.ConsolePL",
+        "projectPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.PL.ConsolePL.csproj",
+        "packagesPath": "C:\\Users\\Рамиль\\.nuget\\packages\\",
+        "outputPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Рамиль\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

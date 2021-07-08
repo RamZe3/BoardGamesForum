@@ -1,0 +1,9 @@
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\bin\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.exe.config
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\bin\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.exe
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\bin\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.pdb
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\obj\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.csprojAssemblyReference.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\obj\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.AssemblyInfoInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\obj\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.AssemblyInfo.cs
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\obj\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.csproj.CoreCompileInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\obj\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.exe
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\obj\Debug\net472\Epam.BoardGamesForum.PL.ConsolePL.pdb

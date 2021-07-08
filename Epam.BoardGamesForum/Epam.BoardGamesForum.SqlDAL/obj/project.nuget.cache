@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CsDcGvzzO9q2G889Z6lGP/AZDhdXEwG+ume8sQ5lR3RBJZ2bXgHdqGao90qc+OY6he3ysiUzy4m+Gk8D2+FDUg==",
+  "success": true,
+  "projectFilePath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.SqlDAL\\Epam.BoardGamesForum.SqlDAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Рамиль\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Рамиль\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

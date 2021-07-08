@@ -1,0 +1,9 @@
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\bin\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.deps.json
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\bin\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.dll
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\bin\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.pdb
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\obj\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.csprojAssemblyReference.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\obj\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.AssemblyInfoInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\obj\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.AssemblyInfo.cs
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\obj\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.csproj.CoreCompileInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\obj\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.dll
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.Entities\obj\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.pdb

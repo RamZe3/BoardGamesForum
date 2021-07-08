@@ -1,0 +1,9 @@
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.deps.json
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.dll
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.pdb
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.csprojAssemblyReference.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.AssemblyInfoInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.AssemblyInfo.cs
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.csproj.CoreCompileInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.dll
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.pdb
