@@ -6,4 +6,9 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Epam.BoardGamesForum.BLL\Epam.BoardGamesForum.BLL.csproj" />
+    <ProjectReference Include="..\Epam.BoardGamesForum.Entities\Epam.BoardGamesForum.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

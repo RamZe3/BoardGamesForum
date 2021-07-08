@@ -10,3 +10,5 @@ D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.BLL\obj\Debug\netst
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.BLL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.BLL.csproj.CopyComplete
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.BLL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.BLL.dll
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.BLL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.BLL.pdb
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.BLL\bin\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.dll
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.BLL\bin\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.pdb

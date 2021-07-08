@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Epam.BoardGamesForum.SqlDAL
 {
-    class UsersSqlDAL
+    public class UsersSqlDAL
     {
     }
 }

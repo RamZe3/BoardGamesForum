@@ -1,12 +1,105 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.7.2": {},
-    ".NETFramework,Version=v4.7.2/win7-x86": {}
+    ".NETFramework,Version=v4.7.2": {
+      "Epam.BoardGamesForum.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Epam.BoardGamesForum.SqlDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.BoardGamesForum.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.BoardGamesForum.BLL.dll": {}
+        }
+      },
+      "Epam.BoardGamesForum.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Epam.BoardGamesForum.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.BoardGamesForum.Entities.dll": {}
+        }
+      },
+      "Epam.BoardGamesForum.SqlDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Epam.BoardGamesForum.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.BoardGamesForum.SqlDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.BoardGamesForum.SqlDAL.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win7-x86": {
+      "Epam.BoardGamesForum.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Epam.BoardGamesForum.SqlDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.BoardGamesForum.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.BoardGamesForum.BLL.dll": {}
+        }
+      },
+      "Epam.BoardGamesForum.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Epam.BoardGamesForum.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.BoardGamesForum.Entities.dll": {}
+        }
+      },
+      "Epam.BoardGamesForum.SqlDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Epam.BoardGamesForum.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Epam.BoardGamesForum.SqlDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Epam.BoardGamesForum.SqlDAL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Epam.BoardGamesForum.BLL/1.0.0": {
+      "type": "project",
+      "path": "../Epam.BoardGamesForum.BLL/Epam.BoardGamesForum.BLL.csproj",
+      "msbuildProject": "../Epam.BoardGamesForum.BLL/Epam.BoardGamesForum.BLL.csproj"
+    },
+    "Epam.BoardGamesForum.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Epam.BoardGamesForum.Entities/Epam.BoardGamesForum.Entities.csproj",
+      "msbuildProject": "../Epam.BoardGamesForum.Entities/Epam.BoardGamesForum.Entities.csproj"
+    },
+    "Epam.BoardGamesForum.SqlDAL/1.0.0": {
+      "type": "project",
+      "path": "../Epam.BoardGamesForum.SqlDAL/Epam.BoardGamesForum.SqlDAL.csproj",
+      "msbuildProject": "../Epam.BoardGamesForum.SqlDAL/Epam.BoardGamesForum.SqlDAL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.7.2": []
+    ".NETFramework,Version=v4.7.2": [
+      "Epam.BoardGamesForum.BLL >= 1.0.0",
+      "Epam.BoardGamesForum.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Рамиль\\.nuget\\packages\\": {}
@@ -33,7 +126,14 @@
       },
       "frameworks": {
         "net472": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.BLL\\Epam.BoardGamesForum.BLL.csproj": {
+              "projectPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.BLL\\Epam.BoardGamesForum.BLL.csproj"
+            },
+            "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.Entities\\Epam.BoardGamesForum.Entities.csproj": {
+              "projectPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.Entities\\Epam.BoardGamesForum.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

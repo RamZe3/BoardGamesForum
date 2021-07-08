@@ -4,7 +4,17 @@ using System.Text;
 
 namespace Epam.BoardGamesForum.Entities
 {
-    class User
+    public class User
     {
+        public string id { get; set; }
+        public string login { get; set; }
+        public string hashOfPass { get; set; }
+
+        public User(string id, string login, string lashOfPass)
+        {
+            this.id = id;
+            this.login = login;
+            this.hashOfPass = lashOfPass;
+        }
     }
 }

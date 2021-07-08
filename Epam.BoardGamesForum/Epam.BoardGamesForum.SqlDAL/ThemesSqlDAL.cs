@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Epam.BoardGamesForum.BLL
+namespace Epam.BoardGamesForum.SqlDAL
 {
-    public class UsersLogic
+    public class ThemesSqlDAL
     {
     }
 }

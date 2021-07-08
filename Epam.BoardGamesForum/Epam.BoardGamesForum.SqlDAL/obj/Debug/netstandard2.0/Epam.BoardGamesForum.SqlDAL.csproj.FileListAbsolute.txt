@@ -7,3 +7,6 @@ D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\ne
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.csproj.CoreCompileInputs.cache
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.dll
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.pdb
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.dll
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\netstandard2.0\Epam.BoardGamesForum.Entities.pdb
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\netstandard2.0\Epam.BoardGamesForum.SqlDAL.csproj.CopyComplete

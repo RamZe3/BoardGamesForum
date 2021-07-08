@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Epam.BoardGamesForum.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Epam.BoardGamesForum.SqlDAL
 {
-    class ForumPostSqlDAL
+    public class ForumPostsSqlDAL
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Epam.BoardGamesForum.BLL
 {
-    public class UsersLogic
+    public class ThemesLogic
     {
     }
 }
