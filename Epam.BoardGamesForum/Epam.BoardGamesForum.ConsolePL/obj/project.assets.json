@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.PL.ConsolePL.csproj",
-      "projectName": "Epam.BoardGamesForum.PL.ConsolePL",
-      "projectPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.PL.ConsolePL.csproj",
+      "projectUniqueName": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.ConsolePL.csproj",
+      "projectName": "Epam.BoardGamesForum.ConsolePL",
+      "projectPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.ConsolePL.csproj",
       "packagesPath": "C:\\Users\\Рамиль\\.nuget\\packages\\",
       "outputPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\obj\\",
       "projectStyle": "PackageReference",
