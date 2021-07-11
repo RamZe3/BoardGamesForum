@@ -14,3 +14,4 @@ D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\bin\Debug
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\bin\Debug\net472\Epam.BoardGamesForum.Entities.pdb
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\bin\Debug\net472\Epam.BoardGamesForum.SqlDAL.pdb
 D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\obj\Debug\net472\Epam.BoardGamesForum.ConsolePL.csproj.CopyComplete
+D:\BoardGamesForum\Epam.BoardGamesForum\Epam.BoardGamesForum.ConsolePL\bin\Debug\net472\System.Data.SqlClient.dll

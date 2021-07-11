@@ -6,26 +6,19 @@ namespace Epam.BoardGamesForum.BLL
 {
     public static class HashGenerator
     {
-        public static string GenerateHash(string str)
+        public static Guid GenerateHash(string str)
         {
-            using (var md5Hasher = MD5.Create())
+            using (MD5 md5 = MD5.Create())
             {
-                var data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(str));
-                return BitConverter.ToString(data).Replace("-", "").Substring(0, 16);
+                byte[] hash = md5.ComputeHash(Encoding.Default.GetBytes(str));
+                Guid result = new Guid(hash);
+                return result;
             }
         }
 
-        public static string GenerateHash()
+        public static Guid GenerateHash()
         {
-            var bytes = new byte[8];
-            using (var rng = new RNGCryptoServiceProvider())
-            {
-                rng.GetBytes(bytes);
-            }
-
-            string hash = BitConverter.ToString(bytes).Replace("-", "").ToLower();
-
-            return hash;
+            return Guid.NewGuid();
         }
     }
 }

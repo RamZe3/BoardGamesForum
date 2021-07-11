@@ -6,15 +6,17 @@ namespace Epam.BoardGamesForum.Entities
 {
     public class User
     {
-        public string id { get; set; }
+        public Guid id { get; set; }
         public string login { get; set; }
         public string hashOfPass { get; set; }
+        public string role { get; set; }
 
-        public User(string id, string login, string lashOfPass)
+        public User(Guid id, string login, string hashOfPass, string role)
         {
             this.id = id;
             this.login = login;
-            this.hashOfPass = lashOfPass;
+            this.hashOfPass = hashOfPass;
+            this.role = role;
         }
     }
 }
