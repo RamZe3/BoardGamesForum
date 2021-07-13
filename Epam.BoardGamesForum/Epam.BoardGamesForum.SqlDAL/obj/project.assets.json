@@ -217,16 +217,6 @@
             "rid": "win"
           }
         }
-      },
-      "Epam.BoardGamesForum.Entities/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Epam.BoardGamesForum.Entities.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Epam.BoardGamesForum.Entities.dll": {}
-        }
       }
     }
   },
@@ -857,16 +847,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "Epam.BoardGamesForum.Entities/1.0.0": {
-      "type": "project",
-      "path": "../Epam.BoardGamesForum.Entities/Epam.BoardGamesForum.Entities.csproj",
-      "msbuildProject": "../Epam.BoardGamesForum.Entities/Epam.BoardGamesForum.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Epam.BoardGamesForum.Entities >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "System.Data.SqlClient >= 4.8.2"
     ]
@@ -896,11 +880,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.Entities\\Epam.BoardGamesForum.Entities.csproj": {
-              "projectPath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.Entities\\Epam.BoardGamesForum.Entities.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

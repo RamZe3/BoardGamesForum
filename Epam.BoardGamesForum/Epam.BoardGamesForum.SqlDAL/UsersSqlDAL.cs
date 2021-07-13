@@ -105,5 +105,29 @@ namespace Epam.BoardGamesForum.SqlDAL
                 throw new InvalidOperationException("Cannot find User with ID = " + id);
             }
         }
+
+        public void EditUser(Guid id, Guid newId, string newLogin, string newHashOfPass)
+        {
+            using (var _connection = new SqlConnection(_connectionString))
+            {
+                var query = $"UPDATE dbo.Users SET Login='{newLogin}', HashOfPass='{newHashOfPass}', Id='{newId}'" +
+                    $"WHERE Id = '{id}'";
+                var command = new SqlCommand(query, _connection);
+
+                try
+                {
+                    _connection.Open();
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex);
+                }
+                finally
+                {
+                    _connection.Close();
+                }
+            }
+        }
     }
 }

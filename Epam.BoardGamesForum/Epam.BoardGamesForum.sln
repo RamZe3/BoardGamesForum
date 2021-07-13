@@ -11,28 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{EE57CE1C-171
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{26F80B74-3DC7-4C67-93C7-5B9C301772E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.Entities", "Epam.BoardGamesForum.Entities\Epam.BoardGamesForum.Entities.csproj", "{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.BLL", "Epam.BoardGamesForum.BLL\Epam.BoardGamesForum.BLL.csproj", "{9B673AB0-611A-496B-B572-A5BBAF596405}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28} = {A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.SqlDAL", "Epam.BoardGamesForum.SqlDAL\Epam.BoardGamesForum.SqlDAL.csproj", "{0008E22A-E21E-4F65-96E6-4F0E95EACE49}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28} = {A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.WebPL", "Epam.BoardGamesForum.WebPL\Epam.BoardGamesForum.WebPL.csproj", "{A9E10BDF-E392-4285-B836-1A694BF1DD8C}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28} = {A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.ConsolePL", "Epam.BoardGamesForum.ConsolePL\Epam.BoardGamesForum.ConsolePL.csproj", "{999E49FD-01E2-4A73-92F9-9FC32D1924C8}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28} = {A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}
-		{9B673AB0-611A-496B-B572-A5BBAF596405} = {9B673AB0-611A-496B-B572-A5BBAF596405}
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epam.BoardGamesForum.ConsolePL", "Epam.BoardGamesForum.ConsolePL\Epam.BoardGamesForum.ConsolePL.csproj", "{999E49FD-01E2-4A73-92F9-9FC32D1924C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.BLL", "Epam.BoardGamesForum.BLL1\Epam.BoardGamesForum.BLL.csproj", "{8F038A35-4F85-41C6-B810-32D334E23A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.Entities", "Epam.BoardGamesForum.Entities1\Epam.BoardGamesForum.Entities.csproj", "{12221FDD-8811-430D-9ED3-372370FC36C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.BoardGamesForum.SqlDAL", "SqlDAL1\Epam.BoardGamesForum.SqlDAL.csproj", "{DB4E0B7D-24AF-4D7E-BB13-D93A3591F1A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,18 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B673AB0-611A-496B-B572-A5BBAF596405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B673AB0-611A-496B-B572-A5BBAF596405}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B673AB0-611A-496B-B572-A5BBAF596405}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B673AB0-611A-496B-B572-A5BBAF596405}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0008E22A-E21E-4F65-96E6-4F0E95EACE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0008E22A-E21E-4F65-96E6-4F0E95EACE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0008E22A-E21E-4F65-96E6-4F0E95EACE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0008E22A-E21E-4F65-96E6-4F0E95EACE49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9E10BDF-E392-4285-B836-1A694BF1DD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9E10BDF-E392-4285-B836-1A694BF1DD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9E10BDF-E392-4285-B836-1A694BF1DD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,16 +35,28 @@ Global
 		{999E49FD-01E2-4A73-92F9-9FC32D1924C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{999E49FD-01E2-4A73-92F9-9FC32D1924C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{999E49FD-01E2-4A73-92F9-9FC32D1924C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F038A35-4F85-41C6-B810-32D334E23A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F038A35-4F85-41C6-B810-32D334E23A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F038A35-4F85-41C6-B810-32D334E23A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F038A35-4F85-41C6-B810-32D334E23A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12221FDD-8811-430D-9ED3-372370FC36C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12221FDD-8811-430D-9ED3-372370FC36C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12221FDD-8811-430D-9ED3-372370FC36C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12221FDD-8811-430D-9ED3-372370FC36C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB4E0B7D-24AF-4D7E-BB13-D93A3591F1A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB4E0B7D-24AF-4D7E-BB13-D93A3591F1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB4E0B7D-24AF-4D7E-BB13-D93A3591F1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB4E0B7D-24AF-4D7E-BB13-D93A3591F1A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A4EDC26E-0FEF-47F0-B7A5-FAC7C55C1F28} = {26F80B74-3DC7-4C67-93C7-5B9C301772E2}
-		{9B673AB0-611A-496B-B572-A5BBAF596405} = {C395F989-BC6C-4385-9685-D574AEC4CC18}
-		{0008E22A-E21E-4F65-96E6-4F0E95EACE49} = {EE57CE1C-1718-47E0-A3C7-2C598844800E}
 		{A9E10BDF-E392-4285-B836-1A694BF1DD8C} = {F14711D9-113A-40D4-8276-2A8152566FCF}
 		{999E49FD-01E2-4A73-92F9-9FC32D1924C8} = {F14711D9-113A-40D4-8276-2A8152566FCF}
+		{8F038A35-4F85-41C6-B810-32D334E23A61} = {C395F989-BC6C-4385-9685-D574AEC4CC18}
+		{12221FDD-8811-430D-9ED3-372370FC36C4} = {26F80B74-3DC7-4C67-93C7-5B9C301772E2}
+		{DB4E0B7D-24AF-4D7E-BB13-D93A3591F1A5} = {EE57CE1C-1718-47E0-A3C7-2C598844800E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B66DF81-EC2D-4512-B360-73675E2D3785}

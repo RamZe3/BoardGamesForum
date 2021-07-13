@@ -1,0 +1,6 @@
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.Entities\bin\Debug\Epam.BoardGamesForum.Entities.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.Entities\bin\Debug\Epam.BoardGamesForum.Entities.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.Entities\obj\Debug\Epam.BoardGamesForum.Entities.csprojAssemblyReference.cache
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.Entities\obj\Debug\Epam.BoardGamesForum.Entities.csproj.CoreCompileInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.Entities\obj\Debug\Epam.BoardGamesForum.Entities.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.Entities\obj\Debug\Epam.BoardGamesForum.Entities.pdb

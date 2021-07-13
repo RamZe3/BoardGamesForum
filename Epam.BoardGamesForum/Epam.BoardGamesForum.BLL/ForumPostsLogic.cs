@@ -25,17 +25,20 @@ namespace Epam.BoardGamesForum.BLL
             ForumPostsSqlDAL.DeletePost(id);
         }
 
-        // TODO
-        /*
         public ForumPost GetPost(Guid id)
         {
-            ForumPost post = ForumPostsSqlDAL.GetPost();
+            ForumPost post = ForumPostsSqlDAL.GetPost(id);
             return post;
-        }*/
+        }
 
         public IEnumerable<ForumPost> GetPosts()
         {
             return ForumPostsSqlDAL.GetPosts();
+        }
+
+        public void EditPost(Guid id, string newText)
+        {
+            ForumPostsSqlDAL.EditPost(id, newText);
         }
     }
 }

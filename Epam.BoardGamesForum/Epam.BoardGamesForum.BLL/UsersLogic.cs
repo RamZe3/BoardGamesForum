@@ -8,6 +8,8 @@ namespace Epam.BoardGamesForum.BLL
 {
     public class UsersLogic
     {
+        //id = Hash of Login
+
         UsersSqlDAL UsersSqlDAL = new UsersSqlDAL();
         public void AddUser(string login, string pass, string role)
         {
@@ -17,13 +19,15 @@ namespace Epam.BoardGamesForum.BLL
             UsersSqlDAL.AddUser(user);
         }
 
-        public void DeleteUser(Guid id)
+        public void DeleteUser(string login)
         {
+            Guid id = HashGenerator.GenerateHash(login);
             UsersSqlDAL.DeleteUser(id);
         }
 
-        public User GetUser(Guid id)
+        public User GetUser(string login)
         {
+            Guid id = HashGenerator.GenerateHash(login);
             User user = UsersSqlDAL.GetUser(id);
             return user;
         }
@@ -31,6 +35,14 @@ namespace Epam.BoardGamesForum.BLL
         public IEnumerable<User> GetUsers()
         {
             return UsersSqlDAL.GetUsers();
+        }
+
+        public void EditUser(string Login, string newLogin, string newPass)
+        {
+            Guid id = HashGenerator.GenerateHash(Login);
+            Guid newId = HashGenerator.GenerateHash(newLogin);
+            string newHashOfPass = HashGenerator.GenerateHash(newPass).ToString();
+            UsersSqlDAL.EditUser(id, newId, newLogin, newHashOfPass);
         }
     }
 }

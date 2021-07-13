@@ -79,13 +79,12 @@ namespace Epam.BoardGamesForum.SqlDAL
         }
 
 
-        //TODO
-        /*
-        public User GetPost(Guid id)
+        
+        public ForumPost GetPost(Guid id)
         {
             using (var _connection = new SqlConnection(_connectionString))
             {
-                var stProc = "Users_GetById";
+                var stProc = "ForumPosts_GetById";
 
                 var command = new SqlCommand(stProc, _connection)
                 {
@@ -100,17 +99,41 @@ namespace Epam.BoardGamesForum.SqlDAL
 
                 if (reader.Read())
                 {
-                    return new User(
+                    return new ForumPost(
                         id: (Guid)reader["Id"],
-                        login: reader["Login"] as string,
-                        hashOfPass: reader["HashOfPass"] as string,
-                        role: reader["Role"] as string);
+                        text: reader["Text"] as string,
+                       publicationDate: (DateTime)reader["PublicationDate"],
+                       authorId: (Guid)reader["AuthorId"],
+                       themeId: (Guid)reader["ThemeId"]);
                 }
                 _connection.Close();
 
                 throw new InvalidOperationException("Cannot find User with ID = " + id);
             }
         }
-        */
+
+        public void EditPost(Guid id, string newText)
+        {
+            using (var _connection = new SqlConnection(_connectionString))
+            {
+                var query = $"UPDATE dbo.ForumPosts SET Text='{newText}'" +
+                    $"WHERE Id = '{id}'";
+                var command = new SqlCommand(query, _connection);
+
+                try
+                {
+                    _connection.Open();
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex);
+                }
+                finally
+                {
+                    _connection.Close();
+                }
+            }
+        }
     }
 }

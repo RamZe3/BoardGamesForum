@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w72uTARXowdOQTlWEp+85JZ01amujJBJqzEthKTTftz6Xb0Pd42sFDzGfFtBubNFQumwCO4hFjMZS1GVk8eJtQ==",
+  "dgSpecHash": "BdGtFEJ6x9aNgsZXipmKuc3UeJUPki8HArK4Lcdar+Z4YTlkzHHtzycj4tZRjMVh/VuDBmeBMCK8YUO1Z/6FaA==",
   "success": true,
   "projectFilePath": "D:\\BoardGamesForum\\Epam.BoardGamesForum\\Epam.BoardGamesForum.ConsolePL\\Epam.BoardGamesForum.ConsolePL.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Рамиль\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

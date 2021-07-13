@@ -2,6 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using Epam.BoardGamesForum.BLL;
+using Epam.BoardGamesForum.SqlDAL;
 
 namespace Epam.BoardGamesForum.ConsolePL
 {
@@ -10,9 +11,9 @@ namespace Epam.BoardGamesForum.ConsolePL
 
         static void Main(string[] args)
         {
-            UsersLogic usersLogic = new UsersLogic();
-            Guid guid = new Guid("66BCF2F1-70B0-8AAC-33E7-3FAF63A87C37");
-            usersLogic.DeleteUser(guid);
+            ThemesLogic themesLogic = new ThemesLogic();
+            themesLogic.AddTheme("TestTheme3");
+            themesLogic.AddTheme("TestTheme2");
         }
     }
 }

@@ -97,5 +97,29 @@ namespace Epam.BoardGamesForum.SqlDAL
                 throw new InvalidOperationException("Cannot find Theme with ID = " + id);
             }
         }
+
+        public void EditTheme(Guid id, Guid newId, string newName)
+        {
+            using (var _connection = new SqlConnection(_connectionString))
+            {
+                var query = $"UPDATE dbo.Themes SET Name='{newName}', Id='{newId}'" +
+                    $"WHERE Id = '{id}'";
+                var command = new SqlCommand(query, _connection);
+
+                try
+                {
+                    _connection.Open();
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex);
+                }
+                finally
+                {
+                    _connection.Close();
+                }
+            }
+        }
     }
 }

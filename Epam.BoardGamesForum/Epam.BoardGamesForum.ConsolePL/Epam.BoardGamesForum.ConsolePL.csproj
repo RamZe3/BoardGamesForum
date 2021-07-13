@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Epam.BoardGamesForum.BLL\Epam.BoardGamesForum.BLL.csproj" />
-    <ProjectReference Include="..\Epam.BoardGamesForum.Entities\Epam.BoardGamesForum.Entities.csproj" />
+    <ProjectReference Include="..\Epam.BoardGamesForum.BLL1\Epam.BoardGamesForum.BLL.csproj" />
+    <ProjectReference Include="..\Epam.BoardGamesForum.Entities1\Epam.BoardGamesForum.Entities.csproj" />
+    <ProjectReference Include="..\Epam.BoardGamesForum.WebPL\Epam.BoardGamesForum.WebPL.csproj" />
+    <ProjectReference Include="..\SqlDAL1\Epam.BoardGamesForum.SqlDAL.csproj" />
   </ItemGroup>
 
 </Project>

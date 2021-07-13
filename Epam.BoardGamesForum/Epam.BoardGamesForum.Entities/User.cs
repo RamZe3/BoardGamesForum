@@ -18,5 +18,10 @@ namespace Epam.BoardGamesForum.Entities
             this.hashOfPass = hashOfPass;
             this.role = role;
         }
+
+        public User(string login)
+        {
+            this.login = login;
+        }
     }
 }
