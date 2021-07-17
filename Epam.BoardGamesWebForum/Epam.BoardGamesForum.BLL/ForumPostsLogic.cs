@@ -24,6 +24,12 @@ namespace Epam.BoardGamesForum.BLL
         {
             ForumPostsSqlDAL.DeletePost(id);
         }
+        public void DeletePost(string id)
+        {
+            Guid guidId = new Guid(id);
+            ForumPostsSqlDAL.DeletePost(guidId);
+        }
+
 
         public ForumPost GetPost(Guid id)
         {

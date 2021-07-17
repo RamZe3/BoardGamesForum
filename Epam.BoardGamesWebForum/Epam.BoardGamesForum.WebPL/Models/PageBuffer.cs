@@ -1,15 +1,22 @@
 ﻿using Epam.BoardGamesForum.Entities;
 using System;
 using System.Collections.Generic;
+using Epam.BoardGamesForum.BLL;
 using System.Text;
+using System.Linq;
 
-namespace Epam.BoardGamesForum.BLL
+namespace Epam.BoardGamesForum.WebPL.Models
 {
     public static class PageBuffer
     {
         public static User nowUser { get; set; }
+
+        public static User nowauthor { get; set; }
         public static Theme nowTheme { get; set; }
-        public static List<ForumPost> newForumPosts
+
+        public static ForumPost addForumPost { get; set; }
+
+        public static IOrderedEnumerable<ForumPost> newForumPosts
         {
             get
             {
@@ -22,7 +29,11 @@ namespace Epam.BoardGamesForum.BLL
                         newForumPosts.Add(post);
                     }
                 }
-                return newForumPosts;
+
+                var sortedNewForumPosts = from post in newForumPosts
+                                          orderby post.publicationDate
+                                          select post;
+                return sortedNewForumPosts;
             }
         }
     }

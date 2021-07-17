@@ -1,0 +1,102 @@
+﻿@using Epam.BoardGamesForum.WebPL.Models;
+@using Epam.BoardGamesForum.BLL;
+@using Epam.BoardGamesForum.Entities;
+@{
+    Layout = "~/Views/Layout/_Layout1.cshtml";
+    Page.Title = "AdminPunnel";
+    UsersLogic usersLogic = new UsersLogic();
+
+    if (IsPost)
+    {
+        if (Request["giveRole"] != null)
+        {
+            var login = Request["login"];
+            User user = usersLogic.GetUser(login);
+            user.role = Request["giveRole"];
+            usersLogic.EditUser(login, user);
+        }
+        else if (Request["removeRole"] != null)
+        {
+            var login = Request["login"];
+            User user = usersLogic.GetUser(login);
+            user.role = "user";
+            usersLogic.EditUser(login, user);
+        }
+        else if (Request["deleteUser"] != null)
+        {
+            var login = Request["login"];
+            usersLogic.DeleteUser(login);
+        }
+        else if(Request["redirectBtn"] != null)
+        {
+            Response.Redirect("/");
+        }
+    }
+}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<link href="~/Styles/styles1.css" rel="stylesheet" />
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+    <form class="form-horizontal" role="form" method="post">
+        <h2>Give moderator role</h2>
+        <div class="form-group">
+            <label for="firstName" class="col-sm-3 control-label">Login</label>
+            <div class="col-sm-9">
+                <input name="login" type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+            </div>
+        </div>
+        <button name="giveRole" value="moderator" type="submit" class="btn btn-primary btn-block">Give role</button>
+    </form> <!-- /form -->
+</div> <!-- ./container -->
+
+<div class="container">
+    <form class="form-horizontal" role="form" method="post">
+        <h2>Remove moderator role</h2>
+        <div class="form-group">
+            <label for="firstName" class="col-sm-3 control-label">Login</label>
+            <div class="col-sm-9">
+                <input name="login" type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+            </div>
+        </div>
+        <button name="removeRole" value="moderator" type="submit" class="btn btn-primary btn-block">Remove role</button>
+    </form> <!-- /form -->
+</div> <!-- ./container -->
+
+<div class="container">
+    <form class="form-horizontal" role="form" method="post">
+        <h2>Delete user</h2>
+        <div class="form-group">
+            <label for="firstName" class="col-sm-3 control-label">Login</label>
+            <div class="col-sm-9">
+                <input name="login" type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+            </div>
+        </div>
+        <button name="deleteUser" value="moderator" type="submit" class="btn btn-primary btn-block">Delete user</button>
+    </form> <!-- /form -->
+</div> <!-- ./container -->
+
+<form method="post">
+    <button name="redirectBtn" value="redirect" type="submit" class="btn btn-primary btn-block">Redirect to index</button>
+</form>
+
+<br />
+<div class="alert alert-primary" role="alert">
+    Пользователи:
+</div>
+<br />
+<ul class="list-group">
+    @{
+        foreach (var user in usersLogic.GetUsers())
+        {
+            <li class="list-group-item">@user.login : @user.role</li>
+        }
+    }
+</ul>

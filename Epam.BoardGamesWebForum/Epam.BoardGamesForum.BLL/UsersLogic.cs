@@ -32,6 +32,26 @@ namespace Epam.BoardGamesForum.BLL
             return user;
         }
 
+        public void EditUser(string login, User editUser)
+        {
+            Guid id = HashGenerator.GenerateHash(login);
+            UsersSqlDAL.DeleteUser(id);
+            UsersSqlDAL.AddUser(editUser);
+        }
+
+        public User GetUser(Guid loginId)
+        {
+            try
+            {
+                User user = UsersSqlDAL.GetUser(loginId);
+                return user;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public IEnumerable<User> GetUsers()
         {
             return UsersSqlDAL.GetUsers();
