@@ -2,26 +2,28 @@
 @using Epam.BoardGamesForum.BLL;
 @{
     Layout = "~/Views/Layout/_Layout1.cshtml";
-    Page.Title = "registration";
+    Page.Title = "login";
 
     if (IsPost)
     {
-        var login = Request["login"];
-        var pass = Request["password"];
+            var login = Request["login"];
+            var pass = Request["password"];
 
-        if (Auth.CanLogin(login, pass))
-        {
-            FormsAuthentication.SetAuthCookie(login, createPersistentCookie: true);
-            Response.Redirect("/");
+            if (Auth.CanLogin(login, pass))
+            {
+                FormsAuthentication.SetAuthCookie(login, createPersistentCookie: true);
+                Response.Redirect("/");
+            }
+            else
+            {
+                <div class="alert alert-danger" role="alert">
+                    Неверно введен логин или пароль!
+                </div>
+            }
         }
-        else
-        {
-    <div class="alert alert-danger" role="alert">
-        Неверно введен логин или пароль!
-    </div>
-        }
+        
+    
     }
-}
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

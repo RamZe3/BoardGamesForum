@@ -9,7 +9,7 @@ namespace Epam.BoardGamesForum.WebPL.Models
 {
     public class Auth
     {
-        private static UsersLogic _usersLogic = new UsersLogic();
+        private static UsersLogic _usersLogic { get; } = new UsersLogic();
         public static bool CanLogin(string Login, string Password)
         {
             User user = _usersLogic.GetUser(Login);
@@ -30,7 +30,7 @@ namespace Epam.BoardGamesForum.WebPL.Models
                 User user = _usersLogic.GetUser(Login);
                 return false;
             }
-            catch (Exception e)
+            catch 
             {
                 return true;
             }

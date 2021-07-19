@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using Epam.BoardGamesForum.BLL;
 using System.Text;
 using System.Linq;
+using NLog;
 
 namespace Epam.BoardGamesForum.WebPL.Models
 {
     public static class PageBuffer
     {
+        public static Logger logger { get; set; } = LogManager.GetCurrentClassLogger();
         public static User nowUser { get; set; }
 
         public static User nowauthor { get; set; }

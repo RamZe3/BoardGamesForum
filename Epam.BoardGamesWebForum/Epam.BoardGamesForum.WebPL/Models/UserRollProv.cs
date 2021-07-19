@@ -10,7 +10,7 @@ namespace Epam.BoardGamesForum.WebPL.Models
 {
     public class UserRollProv : RoleProvider
     {
-        private UsersLogic _usersLogic = new UsersLogic();
+        private UsersLogic _usersLogic { get; } = new UsersLogic();
         public override bool IsUserInRole(string username, string roleName)
         {
             User user = _usersLogic.GetUser(username);

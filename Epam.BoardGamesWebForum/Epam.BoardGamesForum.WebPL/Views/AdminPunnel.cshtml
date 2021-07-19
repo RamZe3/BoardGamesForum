@@ -1,35 +1,45 @@
 ﻿@using Epam.BoardGamesForum.WebPL.Models;
 @using Epam.BoardGamesForum.BLL;
 @using Epam.BoardGamesForum.Entities;
+@using NLog;
 @{
     Layout = "~/Views/Layout/_Layout1.cshtml";
     Page.Title = "AdminPunnel";
+
     UsersLogic usersLogic = new UsersLogic();
 
     if (IsPost)
     {
-        if (Request["giveRole"] != null)
+        try
         {
-            var login = Request["login"];
-            User user = usersLogic.GetUser(login);
-            user.role = Request["giveRole"];
-            usersLogic.EditUser(login, user);
+            if (Request["giveRole"] != null)
+            {
+                var login = Request["login"];
+                User user = usersLogic.GetUser(login);
+                user.role = Request["giveRole"];
+                usersLogic.EditUser(login, user);
+            }
+            else if (Request["removeRole"] != null)
+            {
+                var login = Request["login"];
+                User user = usersLogic.GetUser(login);
+                user.role = "user";
+                usersLogic.EditUser(login, user);
+            }
+            else if (Request["deleteUser"] != null)
+            {
+                var login = Request["login"];
+                usersLogic.DeleteUser(login);
+            }
+            else if (Request["redirectBtn"] != null)
+            {
+                Response.Redirect("/");
+            }
         }
-        else if (Request["removeRole"] != null)
+        catch
         {
-            var login = Request["login"];
-            User user = usersLogic.GetUser(login);
-            user.role = "user";
-            usersLogic.EditUser(login, user);
-        }
-        else if (Request["deleteUser"] != null)
-        {
-            var login = Request["login"];
-            usersLogic.DeleteUser(login);
-        }
-        else if(Request["redirectBtn"] != null)
-        {
-            Response.Redirect("/");
+            PageBuffer.logger.Error("Admin page loading error");
+            Response.Redirect("~/Views/errorPage");
         }
     }
 }
