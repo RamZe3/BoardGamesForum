@@ -2,10 +2,11 @@
 @using Epam.BoardGamesForum.Entities;
 @using Epam.BoardGamesForum.WebPL.Models;
 @using NLog;
+@using Epam.BoardGamesForum.BLL.Interfaces;
 @{
-    ThemesLogic themesLogic = new ThemesLogic();
-    ForumPostsLogic forumPostsLogic = new ForumPostsLogic();
-    UsersLogic usersLogic = new UsersLogic();
+    IThemesLogic themesLogic = PageBuffer.themesBLL;
+    IForumPostsLogic forumPostsLogic = PageBuffer.forumPostsBLL;
+    IUsersLogic usersLogic = PageBuffer.usersBLL;
 
     try
     {

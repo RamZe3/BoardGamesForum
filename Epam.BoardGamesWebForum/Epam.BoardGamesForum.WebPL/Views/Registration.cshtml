@@ -1,36 +1,37 @@
 ﻿@using Epam.BoardGamesForum.WebPL.Models;
 @using Epam.BoardGamesForum.BLL;
+@using Epam.BoardGamesForum.BLL.Interfaces;
 @{
     Layout = "~/Views/Layout/_Layout1.cshtml";
     Page.Title = "registration";
 
     if (IsPost)
     {
-            var login = Request["login"];
-            var pass = Request["password"];
+        var login = Request["login"];
+        var pass = Request["password"];
 
-            if (Auth.CanRegister(login))
+        if (Auth.CanRegister(login))
+        {
+            IUsersLogic usersLogic = PageBuffer.usersBLL;
+            if (login == "admin")
             {
-                UsersLogic usersLogic = new UsersLogic();
-                if (login == "admin")
-                {
-                    usersLogic.AddUser(login, pass, "admin");
-                }
-                else
-                {
-                    usersLogic.AddUser(login, pass, "user");
-                }
-                FormsAuthentication.SetAuthCookie(login, createPersistentCookie: true);
-                Response.Redirect("/");
+                usersLogic.AddUser(login, pass, "admin");
             }
             else
             {
+                usersLogic.AddUser(login, pass, "user");
+            }
+            FormsAuthentication.SetAuthCookie(login, createPersistentCookie: true);
+            Response.Redirect("/");
+        }
+        else
+        {
             <div class="alert alert-danger" role="alert">
                 Пользователь уже зарегестрирован!
             </div>
-            }
         }
     }
+}
     }
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">

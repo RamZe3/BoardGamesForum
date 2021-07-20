@@ -3,23 +3,33 @@ using Epam.BoardGamesForum.SqlDAL;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Epam.BoardGamesForum.BLL.Interfaces;
+using Epam.BoardGamesForum.DAL.Interfaces;
 
 namespace Epam.BoardGamesForum.BLL
 {
-    public class ThemesLogic
+    public class ThemesLogic : IThemesLogic
     {
-        ThemesSqlDAL ThemesSqlDAL = new ThemesSqlDAL();
+        //id = Hash of Name
+
+        private IThemesDAL _ThemesDAL;
+
+        public ThemesLogic(IThemesDAL themesDAL)
+        {
+            _ThemesDAL = themesDAL;
+        }
+
         public void AddTheme(string name)
         {
             Guid id = HashGenerator.GenerateHash(name);
             Theme theme = new Theme(id, name);
-            ThemesSqlDAL.AddTheme(theme);
+            _ThemesDAL.AddTheme(theme);
         }
 
         public void DeleteTheme(string name)
         {
             Guid id = HashGenerator.GenerateHash(name);
-            ThemesSqlDAL.DeleteTheme(id);
+            _ThemesDAL.DeleteTheme(id);
 
             ForumPostsSqlDAL forumPostsSqlDAL = new ForumPostsSqlDAL();
             foreach (var post in forumPostsSqlDAL.GetPosts())
@@ -34,20 +44,20 @@ namespace Epam.BoardGamesForum.BLL
         public Theme GetTheme(string name)
         {
             Guid id = HashGenerator.GenerateHash(name);
-            Theme theme = ThemesSqlDAL.GetTheme(id);
+            Theme theme = _ThemesDAL.GetTheme(id);
             return theme;
         }
 
         public IEnumerable<Theme> GetThemes()
         {
-            return ThemesSqlDAL.GetThemes();
+            return _ThemesDAL.GetThemes();
         }
 
         public void EditTheme(string name, string newName)
         {
             Guid id = HashGenerator.GenerateHash(name);
             Guid newId = HashGenerator.GenerateHash(newName);
-            ThemesSqlDAL.EditTheme(id, newId, newName);
+            _ThemesDAL.EditTheme(id, newId, newName);
         }
     }
 }

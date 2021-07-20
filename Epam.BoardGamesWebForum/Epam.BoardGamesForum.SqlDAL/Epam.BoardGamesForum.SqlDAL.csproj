@@ -47,6 +47,10 @@
     <Compile Include="UsersSqlDAL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Epam.BoardGamesForum.DAL.Interfaces\Epam.BoardGamesForum.DAL.Interfaces.csproj">
+      <Project>{adddeeb0-e6aa-435d-885c-470deda92519}</Project>
+      <Name>Epam.BoardGamesForum.DAL.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Epam.BoardGamesForum.Entities\Epam.BoardGamesForum.Entities.csproj">
       <Project>{da764089-721b-4f47-9043-56abe4e058be}</Project>
       <Name>Epam.BoardGamesForum.Entities</Name>

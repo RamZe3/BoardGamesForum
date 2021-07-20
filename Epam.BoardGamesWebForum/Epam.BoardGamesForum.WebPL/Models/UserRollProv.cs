@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
+using Epam.BoardGamesForum.BLL.Interfaces;
 
 namespace Epam.BoardGamesForum.WebPL.Models
 {
     public class UserRollProv : RoleProvider
     {
-        private UsersLogic _usersLogic { get; } = new UsersLogic();
+        private IUsersLogic _usersLogic { get; } = PageBuffer.usersBLL;
         public override bool IsUserInRole(string username, string roleName)
         {
             User user = _usersLogic.GetUser(username);

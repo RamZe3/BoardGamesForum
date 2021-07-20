@@ -1,0 +1,9 @@
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\bin\Debug\Epam.BoardGamesForum.DAL.Interfaces.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\bin\Debug\Epam.BoardGamesForum.DAL.Interfaces.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\bin\Debug\Epam.BoardGamesForum.Entities.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\bin\Debug\Epam.BoardGamesForum.Entities.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\obj\Debug\Epam.BoardGamesForum.DAL.Interfaces.csprojAssemblyReference.cache
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\obj\Debug\Epam.BoardGamesForum.DAL.Interfaces.csproj.CoreCompileInputs.cache
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\obj\Debug\Epam.BoardGamesForum.DAL.Interfaces.csproj.CopyComplete
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\obj\Debug\Epam.BoardGamesForum.DAL.Interfaces.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.DAL.Interfaces\obj\Debug\Epam.BoardGamesForum.DAL.Interfaces.pdb

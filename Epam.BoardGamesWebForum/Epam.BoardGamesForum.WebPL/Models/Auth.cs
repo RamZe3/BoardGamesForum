@@ -4,12 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Epam.BoardGamesForum.BLL.Interfaces;
 
 namespace Epam.BoardGamesForum.WebPL.Models
 {
     public class Auth
     {
-        private static UsersLogic _usersLogic { get; } = new UsersLogic();
+        private static IUsersLogic _usersLogic { get; } = PageBuffer.usersBLL;
         public static bool CanLogin(string Login, string Password)
         {
             User user = _usersLogic.GetUser(Login);

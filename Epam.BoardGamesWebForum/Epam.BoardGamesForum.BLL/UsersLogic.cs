@@ -3,47 +3,55 @@ using Epam.BoardGamesForum.SqlDAL;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Epam.BoardGamesForum.BLL.Interfaces;
+using Epam.BoardGamesForum.DAL.Interfaces;
 
 namespace Epam.BoardGamesForum.BLL
 {
-    public class UsersLogic
+    public class UsersLogic : IUsersLogic
     {
         //id = Hash of Login
 
-        UsersSqlDAL UsersSqlDAL = new UsersSqlDAL();
+        private IUsersDAL _UsersDAL;
+
+        public UsersLogic(IUsersDAL usersDAL)
+        {
+            _UsersDAL = usersDAL;
+        }
+
         public void AddUser(string login, string pass, string role)
         {
             string hashOfPass = HashGenerator.GenerateHash(pass).ToString();
             Guid id = HashGenerator.GenerateHash(login);
             User user = new User(id, login, hashOfPass, role);
-            UsersSqlDAL.AddUser(user);
+            _UsersDAL.AddUser(user);
         }
 
         public void DeleteUser(string login)
         {
             Guid id = HashGenerator.GenerateHash(login);
-            UsersSqlDAL.DeleteUser(id);
+            _UsersDAL.DeleteUser(id);
         }
 
         public User GetUser(string login)
         {
             Guid id = HashGenerator.GenerateHash(login);
-            User user = UsersSqlDAL.GetUser(id);
+            User user = _UsersDAL.GetUser(id);
             return user;
         }
 
         public void EditUser(string login, User editUser)
         {
             Guid id = HashGenerator.GenerateHash(login);
-            UsersSqlDAL.DeleteUser(id);
-            UsersSqlDAL.AddUser(editUser);
+            _UsersDAL.DeleteUser(id);
+            _UsersDAL.AddUser(editUser);
         }
 
         public User GetUser(Guid loginId)
         {
             try
             {
-                User user = UsersSqlDAL.GetUser(loginId);
+                User user = _UsersDAL.GetUser(loginId);
                 return user;
             }
             catch
@@ -54,7 +62,7 @@ namespace Epam.BoardGamesForum.BLL
 
         public IEnumerable<User> GetUsers()
         {
-            return UsersSqlDAL.GetUsers();
+            return _UsersDAL.GetUsers();
         }
 
         public void EditUser(string Login, string newLogin, string newPass)
@@ -62,7 +70,7 @@ namespace Epam.BoardGamesForum.BLL
             Guid id = HashGenerator.GenerateHash(Login);
             Guid newId = HashGenerator.GenerateHash(newLogin);
             string newHashOfPass = HashGenerator.GenerateHash(newPass).ToString();
-            UsersSqlDAL.EditUser(id, newId, newLogin, newHashOfPass);
+            _UsersDAL.EditUser(id, newId, newLogin, newHashOfPass);
         }
     }
 }

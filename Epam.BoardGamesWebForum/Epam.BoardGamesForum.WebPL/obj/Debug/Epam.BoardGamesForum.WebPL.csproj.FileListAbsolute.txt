@@ -133,3 +133,9 @@ D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\System
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\System.Numerics.Vectors.xml
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\System.Runtime.CompilerServices.Unsafe.xml
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\System.Text.Encodings.Web.xml
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\Epam.BoardGamesForum.BLL.Interfaces.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\Epam.BoardGamesForum.DAL.Interfaces.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\Epam.BoardGamesForum.BLL.Interfaces.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\Epam.BoardGamesForum.DAL.Interfaces.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\Epam.BoardGamesWebForum.Dependencies.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.WebPL\bin\Epam.BoardGamesWebForum.Dependencies.pdb

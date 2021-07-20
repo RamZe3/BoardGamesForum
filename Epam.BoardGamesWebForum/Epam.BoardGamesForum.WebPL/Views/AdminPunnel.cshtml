@@ -2,11 +2,12 @@
 @using Epam.BoardGamesForum.BLL;
 @using Epam.BoardGamesForum.Entities;
 @using NLog;
+@using Epam.BoardGamesForum.BLL.Interfaces;
 @{
     Layout = "~/Views/Layout/_Layout1.cshtml";
     Page.Title = "AdminPunnel";
 
-    UsersLogic usersLogic = new UsersLogic();
+    IUsersLogic usersLogic = PageBuffer.usersBLL;
 
     if (IsPost)
     {

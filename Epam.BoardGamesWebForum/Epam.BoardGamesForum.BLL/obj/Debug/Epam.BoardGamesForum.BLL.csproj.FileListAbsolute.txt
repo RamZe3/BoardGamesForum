@@ -9,3 +9,7 @@ D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\obj\Debug\Ep
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\obj\Debug\Epam.BoardGamesForum.BLL.csproj.CopyComplete
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\obj\Debug\Epam.BoardGamesForum.BLL.dll
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\obj\Debug\Epam.BoardGamesForum.BLL.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\bin\Debug\Epam.BoardGamesForum.BLL.Interfaces.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\bin\Debug\Epam.BoardGamesForum.DAL.Interfaces.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\bin\Debug\Epam.BoardGamesForum.BLL.Interfaces.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.BLL\bin\Debug\Epam.BoardGamesForum.DAL.Interfaces.pdb
