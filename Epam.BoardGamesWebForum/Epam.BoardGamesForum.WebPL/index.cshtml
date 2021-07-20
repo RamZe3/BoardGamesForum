@@ -52,7 +52,7 @@
                                             {
                                                 if (Request["forumPost"] != null)
                                                 {
-                                                    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">@Request["forumPost"]</a>
+
                                                     PageBuffer.nowTheme = themesLogic.GetTheme(Request["forumPost"]);
                                                 }
 
@@ -60,14 +60,14 @@
                                                 {
                                                     User user1 = new User(User.Identity.Name);
                                                     forumPostsLogic.AddPost(Request["postText"], usersLogic.GetUser(User.Identity.Name), PageBuffer.nowTheme);
-                                                    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">@Request["postText"]</a>
+
                                                 }
 
                                                 if (Request["deletePost"] != null)
                                                 {
 
                                                     forumPostsLogic.DeletePost(Request["deletePost"]);
-                                                    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">@Request["deletePost"]</a>
+
                                                 }
                                             }
 
@@ -138,7 +138,7 @@
                                                 Response.Redirect("/");
                                             }
 
-                                            <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">Popular this week</a>
+
                                         </nav>
                                     </div>
                                 </div>

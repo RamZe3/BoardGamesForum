@@ -9,3 +9,11 @@ D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\obj\Debug
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\obj\Debug\Epam.BoardGamesForum.SqlDAL.pdb
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\Epam.BoardGamesForum.DAL.Interfaces.dll
 D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\Epam.BoardGamesForum.DAL.Interfaces.pdb
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Security.AccessControl.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Security.Permissions.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Security.Principal.Windows.dll
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Security.AccessControl.xml
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Security.Permissions.xml
+D:\BoardGamesForum\Epam.BoardGamesWebForum\Epam.BoardGamesForum.SqlDAL\bin\Debug\System.Security.Principal.Windows.xml

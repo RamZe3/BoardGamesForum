@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using System.Text;
 using System.Data.SqlClient;
 using Epam.BoardGamesForum.DAL.Interfaces;
+using System.Configuration;
 
 namespace Epam.BoardGamesForum.SqlDAL
 {
     public class ForumPostsSqlDAL : IForumPostsDAL
     {
-        private string _connectionString = @"Data Source=DESKTOP-SL9L2I0\SQLEXPRESS;Initial Catalog=UsersTest;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string _connectionString = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
 
         public ForumPost AddPost(ForumPost forumPost)
         {

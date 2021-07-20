@@ -4,12 +4,13 @@ using System.Text;
 using System.Data.SqlClient;
 using Epam.BoardGamesForum.Entities;
 using Epam.BoardGamesForum.DAL.Interfaces;
+using System.Configuration;
 
 namespace Epam.BoardGamesForum.SqlDAL
 {
     public class ThemesSqlDAL : IThemesDAL
     {
-        private string _connectionString = @"Data Source=DESKTOP-SL9L2I0\SQLEXPRESS;Initial Catalog=UsersTest;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string _connectionString = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
 
         public Theme AddTheme(Theme theme)
         {
